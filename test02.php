@@ -1,16 +1,26 @@
 <?php
-	$height = 1.74;
-	$weight = 45;
-	echo "身高：", $height, "公尺<br>";
-	echo "體重：". $weight. "公斤<br>"; 
+	$names = array ("明", "華", "張", "黃");
+	$heights = array (1.74, 1.56, 1.75, 1.86);
+	$weights = array (45, 47, 95, 76);
+
+	for ($i = 0; $i < count ($names); $i ++){
+		echo "姓名：" . $names [$i]."<br>";
+		$height = $heights[$i];
+		$weight = $weights[$i];
+	
+	echo "身高：", $height, "m<br>";
+	echo "體重：". $weight. "kg<br>"; 
 	$bmi = $weight / $height ** 2;
 	echo "BMI：" . $bmi . "<br>";
 	if ($bmi>24) {
-		echo "你的體重有些太重囉！";
+		echo "FAT！";
 	} else if ($bmi>=18.5) {
-		echo "你的體重很標準耶！";
+		echo "GREAT！";
 	} else {
-		echo "你的體重有些太輕了！";
+		echo "SKINNY！";
 	}
+	echo "<hr>";
+	}
+
 ?>
 
