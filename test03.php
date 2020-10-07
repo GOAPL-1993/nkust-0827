@@ -18,6 +18,6 @@ echo "<br>特別號：" . $st; //不的話回傳
 
 ?>
 <hr>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tu-AG44HPl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <hr>
 不準免錢，有中歡迎斗內...
